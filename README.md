@@ -3,6 +3,7 @@
 Player MIDI e karaokê para Windows 10/11 x64. O Aurora reúne reprodução,
 playlists, mixagem e ferramentas de acompanhamento em uma aplicação desktop
 offline. Esta versão corresponde ao pacote 0.8.0.
+Os arquivos de atualização e o histórico de versões ficam em `Atualizações/`.
 
 > **Pacote portátil:** o repositório inclui `AuroraMIDI.exe` e os recursos do
 > runtime Electron para Windows. O executável é armazenado com Git LFS; instale

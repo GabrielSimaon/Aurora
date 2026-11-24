@@ -255,7 +255,7 @@ remoção/ordenação, compactação e painéis passaram.
 Testes de janelas: agrupamento, minimizar/restaurar e ocultação passaram.
 O executável foi aberto no Windows e o tema branco foi conferido na interface.
 
-O arquivo AuroraMIDI_v0.4_Atualizacao.zip contém resources/app atualizado.
+O arquivo Atualizações\AuroraMIDI_v0.4_Atualizacao.zip contém resources/app atualizado.
 Para aplicar em outra cópia 0.3: feche o player e copie resources para a pasta
 que contém AuroraMIDI.exe, aceitando substituir os arquivos. Este pacote é
 uma atualização e não inclui o runtime/executável do pacote portátil completo.
