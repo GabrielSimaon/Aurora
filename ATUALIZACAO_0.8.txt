@@ -1,0 +1,59 @@
+AURORA MIDI 0.8 — BANCO DE VIRADAS E ENTRADA NO ACOMPANHAMENTO
+
+Feche o Aurora aberto e abra novamente para carregar a atualização.
+
+BANCO DE 13 VIRADAS
+- Variações de tons agudos, médios e graves, com maior presença de surdos
+  (tons de chão graves do kit GM) e menos caixa.
+- Descidas, respostas, graves dobrados e pontes mais espaçadas.
+- O aplicativo alterna os desenhos para evitar repetições seguidas.
+- A prévia interna agora diferencia a afinação e o decaimento dos tons graves.
+  Na saída MIDI Windows/teclado, são usados os sons do kit selecionado.
+
+BPM DAS DUAS MÚSICAS
+A escolha considera o BPM efetivo no ponto de saída da música atual e no
+ponto de entrada da próxima, incluindo os controles de velocidade salvos.
+O cálculo usa o mapa de tempo de cada MIDI, não apenas o BPM inicial.
+Também considera relações de dobro e metade do andamento.
+O compasso da música atual define a duração de um compasso de virada.
+Quando os pulsos diferem, os ataques da virada fazem uma ponte gradual.
+Os BPMs e as preferências das músicas não são alterados pela transição.
+A análise usa exatamente a faixa que vai tocar, inclusive na fila e no
+modo aleatório. A fila continua tendo prioridade sobre a ordem da playlist.
+
+ENTRADA NO PRINCIPAL
+A próxima faixa não precisa mais começar na primeira nota isolada.
+A análise procura a primeira entrada de acompanhamento com acordes, baixo,
+ritmo ou instrumentos em conjunto, preservando notas sustentadas relevantes.
+Assim pode pular um prato sozinho, uma frase isolada ou uma introdução rala.
+Não exige que todos os canais comecem juntos: parte do acompanhamento basta.
+Se não houver acompanhamento bem definido, a análise usa uma entrada
+melódica conservadora em vez de cortar uma parte longa arbitrariamente.
+
+AJUSTAR UMA MÚSICA MANUALMENTE
+A identificação é uma análise musical aproximada do MIDI e pode precisar de
+ajuste em arranjos ambíguos. Pause na entrada desejada, abra Preferências e,
+em Entrada depois da virada, clique em Usar a posição atual.
+Detectar automaticamente remove essa marcação. O ponto fica salvo para a
+música na sessão e no backup Aurora; não altera as notas do arquivo original.
+
+BOTÃO VIRADA
+Um clique deixa azul e aguarda o fim da música. Confirmar dispara na hora.
+A virada de um compasso leva à entrada escolhida do acompanhamento.
+Pausar/continuar mantém o azul; botão direito cancela.
+
+VALIDAÇÃO
+Passaram testes de variedade do banco, prioridade de tons/surdos, dois BPMs,
+mapas de tempo, relações de dobro/metade e compasso 3/4.
+Passaram testes de entrada com prato, frase e pad isolados antes da banda,
+faixas só de percussão, entradas conservadoras e marcação manual.
+No player renderizado, passaram transições 140 → 96 BPM, alternância de
+variações, entrada direta do acompanhamento, persistência do ponto marcado e
+seleção da mesma faixa usada pelo modo aleatório.
+Os testes de fila, fechamento, janelas, Grudar Telas e Abrir com continuam.
+
+PACOTE
+Esta cópia de trabalho já está atualizada. O ZIP contém resources/app e
+documentação; não inclui o executável e as DLLs do runtime portátil.
+Em outra cópia, feche o programa e copie resources para a pasta que contém
+AuroraMIDI.exe, substituindo os arquivos.

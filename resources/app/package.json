@@ -1,0 +1,25 @@
+{
+  "name": "aurora-midi",
+  "productName": "Aurora MIDI",
+  "version": "0.8.0",
+  "description": "Player MIDI e karaoke para Windows",
+  "main": "main.cjs",
+  "author": "Gabriel",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests.cjs && node tests-v2.cjs && node tests-v3.cjs",
+    "start": "electron .",
+    "test:ui": "node dev-tests/test-dom.cjs && node dev-tests/test-v2-ui.cjs && node dev-tests/test-v3-ui.cjs && node dev-tests/test-panels.cjs && node dev-tests/test-desktop.cjs",
+    "test:v04": "node dev-tests/test-v04-performance.cjs && node dev-tests/test-desktop.cjs && node dev-tests/test-v04-browser.cjs",
+    "test:v05": "node dev-tests/test-v05-dock.cjs && node dev-tests/test-desktop.cjs && node dev-tests/test-v05-browser.cjs",
+    "test:v06": "node dev-tests/test-v04-performance.cjs && node dev-tests/test-v06-shutdown.cjs && node dev-tests/test-desktop.cjs && node dev-tests/test-v06-browser.cjs",
+    "test:v07": "node dev-tests/test-v04-performance.cjs && node dev-tests/test-desktop.cjs && node dev-tests/test-v06-shutdown.cjs && node dev-tests/test-v07-launch.cjs && node dev-tests/test-v07-browser.cjs && node dev-tests/test-v07-open-with-browser.cjs",
+    "test:v08": "node dev-tests/test-v08-transition.cjs && node dev-tests/test-v08-browser.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.4.1",
+    "jsdom": "31.0.1",
+    "fake-indexeddb": "6.2.8",
+    "playwright": "^1.56.0"
+  }
+}
