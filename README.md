@@ -2,12 +2,12 @@
 
 Player MIDI e karaokê para Windows 10/11 x64. O Aurora reúne reprodução,
 playlists, mixagem e ferramentas de acompanhamento em uma aplicação desktop
-offline. Esta versão corresponde aos fontes 0.8.0.
+offline. Esta versão corresponde ao pacote 0.8.0.
 
-> **Estado do pacote:** o ZIP de origem contém os fontes e a documentação,
-> mas não inclui `AuroraMIDI.exe` nem as DLLs/runtime do pacote portátil.
-> Portanto, este repositório permite executar a versão de desenvolvimento;
-> não é um instalador pronto para uso.
+> **Pacote portátil:** o repositório inclui `AuroraMIDI.exe` e os recursos do
+> runtime Electron para Windows. O executável é armazenado com Git LFS; instale
+> Git LFS antes de clonar ou execute `git lfs pull` após o clone. Os fontes para
+> desenvolvimento ficam em `resources/app`.
 
 ## Funcionalidades
 
@@ -42,6 +42,11 @@ mixagens; VPL e MIDI exportado são formatos separados e não guardam todos os
 ajustes visuais ou de mixagem do backup.
 
 ## Como usar
+
+### Executar a versão portátil
+
+No Windows 10/11 x64, abra `AuroraMIDI.exe` na raiz do pacote. O pacote inclui
+o runtime necessário e não é um instalador.
 
 ### Executar a versão de desenvolvimento
 
@@ -82,9 +87,8 @@ verificação de áudio, janelas nativas e dispositivos MIDI em um Windows real.
   ajuste do ponto de entrada.
 - MIDI formato 2, geração automática de letras e skins/plugins binários do
   VanBasco não são suportados.
-- O ZIP fornecido não contém o executável portátil. A distribuição de uma
-  versão pronta requer empacotar a aplicação e respeitar também os avisos de
-  licença do Electron/Chromium.
+- O repositório inclui o executável portátil e o runtime Electron/Chromium;
+  respeite também os avisos de licença incluídos no pacote ao redistribuí-lo.
 
 ## Autoria e licença
 
