@@ -32,12 +32,14 @@
   if(!this.nativeTimelineRunning)return;
   window.desktop.timeline({kind:'replace',data:this.compileNativeTimeline(),speed:this.speed,end:Math.min(this.song.duration,this.endAt??this.song.duration,this.loop&&this.loopB>this.loopA?this.loopB:Infinity)});
  };
- proto.stopNativeTimeline=function(){if(!this.nativeTimelineRunning)return;this.nativeTimelineRunning=false;window.desktop?.timeline?.({kind:'stop'});};
+ proto.stopNativeTimeline=function(){if(!this.nativeTimelineRunning)return;this.nativeTimelineRunning=false;window.desktop?.timeline?.({kind:'stop'});this.trackNativeOverrun();};
+ // The native clock may already have played attacks past the UI cursor; track only attacks/sustain-on so active voices are never dropped early.
+ proto.trackNativeOverrun=function(){if(!this.song)return;const horizon=this.position+(Math.max(0,performance.now()-this.last)/1000+.08)*this.speed;for(let i=this.index;i<this.song.events.length&&this.song.events[i].sec<=horizon;i++){const e=this.song.events[i];if(e.type!=='channel')continue;if(e.kind===11&&e.data[0]===64&&e.data[1]>=64){this.runtime[e.ch].sustain=true;continue;}if(e.kind!==9||!e.data[1])continue;const m=this.transform(e);if(m)this.track(e,m);}};
  const play=proto.play;proto.play=async function(options){this.preparingNative=true;try{await play.call(this,options);}finally{this.preparingNative=false;}this.startNativeTimeline();};
  const silence=proto.silence;proto.silence=function(){this.stopNativeTimeline();return silence.call(this);};
  const seek=proto.seek;proto.seek=function(sec,options){this.stopNativeTimeline();const result=seek.call(this,sec,options);this.startNativeTimeline();return result;};
  const load=proto.load;proto.load=function(...args){this.stopNativeTimeline();return load.apply(this,args);};
- const fill=proto.startFill;proto.startFill=function(...args){this.stopNativeTimeline();return fill.apply(this,args);};
+ const fill=proto.startFill;proto.startFill=function(...args){if(this.playing&&!this.fill)this.tick();this.stopNativeTimeline();return fill.apply(this,args);};
  const tick=proto.tick;proto.tick=function(){const result=tick.call(this);this.startNativeTimeline();return result;};
  for(const name of ['refresh','setProgram','setVolume','setSpeed','setTranspose']){const original=proto[name];proto[name]=function(...args){const result=original.apply(this,args);this.updateNativeTimeline();return result;};}
 })();
