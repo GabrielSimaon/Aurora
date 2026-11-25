@@ -1,0 +1,22 @@
+AURORA MIDI 0.11 - SO MAO ESQUERDA
+
+Feche por Encerrar e abra novamente para carregar a atualizacao.
+Na barra de cima, clique em So mao esquerda, ao lado de Teclado ao vivo.
+O painel abre diretamente no modo voltado aos acordes para o violao.
+
+- Usa o ultimo teclado escolhido ou procura E-X50 / SX600 entre as entradas.
+- Comeca pela regiao grave, ate F#3, e tenta aprender o canal ao receber um
+  acorde completo tocado na esquerda. A melodia acima da divisao e ignorada,
+  inclusive se as duas maos usarem o mesmo canal MIDI.
+- Guarda modo, divisao e canal por teclado.
+- Mantem o ultimo acorde recebido nas pausas, identificado na tela.
+- Em Ajustar mao esquerda, permite marcar a ultima tecla da esquerda pelo
+  proprio teclado, ajustar a divisao ou redetectar o canal.
+
+A divisao no Aurora precisa corresponder a regiao usada pelo tecladista.
+Se chegarem apenas as notas da direita com CHORD/ACMP ligado, o painel informa
+que ainda faltam notas da esquerda. Ele nao consegue recuperar acordes que
+nao sejam enviados pelo teclado atraves do USB.
+
+Testes automatizados com MIDI simulado passaram. O comportamento fisico do
+E-X50 com CHORD/ACMP ainda depende de validacao com o instrumento conectado.

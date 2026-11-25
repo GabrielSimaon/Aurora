@@ -1,0 +1,25 @@
+Aurora MIDI 0.14.0
+Feito por Gabriel Simao
+
+ATUALIZAR
+1. Extraia o ZIP inteiro.
+2. Feche o Aurora pelo botao Encerrar.
+3. Abra Atualizar_Aurora.exe com dois cliques.
+4. Selecione a pasta que contem AuroraMIDI.exe.
+5. Abra o programa normalmente.
+
+O atualizador guarda a versao anterior em Backups_Atualizacao.
+Playlists e preferencias pessoais sao preservadas.
+
+NOVIDADES
+- Tamanho das letras corrigido no karaoke grudado e no painel ampliado.
+- Menu Opcoes mais curto, sem repetir arquivos, playlists e mix da tela principal.
+- Mixer compacto com barras segmentadas por canal, instrumento e notas tocadas.
+- Notas curtas de bateria tambem aparecem nos indicadores.
+- M/S continuam acessiveis nas linhas. Clique no nome do instrumento ou abra
+  Timbres, volumes e mixagem para acessar todos os controles anteriores.
+- Viradas atuais mais curtas: dois tempos, preservando o andamento.
+
+O banco com viradas extraidas dos exemplos sera preparado quando os arquivos
+MIDI de referencia forem enviados. Nesta atualizacao o banco existente continua
+em uso, com duracao menor.

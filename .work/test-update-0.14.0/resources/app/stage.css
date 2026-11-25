@@ -1,0 +1,6 @@
+body{overflow:hidden}.karaoke-stage{width:100vw;height:100vh;padding:40px;justify-content:center}.stage-top,.stage-foot{position:absolute;left:40px;right:40px;font-size:12px}.stage-top{top:30px}.stage-foot{bottom:30px}.lyric-line{font-size:clamp(32px,5vw,86px)}.lyric-line.past,.lyric-line.future{font-size:clamp(24px,3vw,50px)}.lyrics{width:100%}
+
+/* User font size takes precedence over compact/fullscreen viewport rules. */
+#stage .lyric-line{font-size:var(--lyric-size,38px)}
+#stage .lyric-line.past{font-size:calc(var(--lyric-size,38px)*.65)}
+#stage .lyric-line.future{font-size:calc(var(--lyric-size,38px)*.7)}

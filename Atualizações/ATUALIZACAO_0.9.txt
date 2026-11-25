@@ -1,0 +1,31 @@
+AURORA MIDI 0.9 - CONTINUIDADE DA REPRODUCAO
+
+COMO USAR
+Feche o AuroraMIDI antes de aplicar este pacote.
+Extraia o RAR dentro da pasta que contem AuroraMIDI.exe e aceite substituir
+a pasta resources. Abra o programa novamente.
+Esta pasta do programa ja recebeu as correcoes; basta fechar e reabrir.
+
+CORRECOES
+- Trocar a playlist aberta mantem a musica atual tocando, inclusive ao abrir
+  uma playlist vazia. A faixa, a posicao e as notas em andamento sao mantidas.
+- O avanco segue o repertorio da musica em reproducao. Selecionar uma musica
+  ou clicar em Tocar playlist inicia o repertorio escolhido.
+- As playlists ja analisadas sao reaproveitadas. Playlists ainda nao abertas
+  sao analisadas em segundo plano, um arquivo por vez.
+- O salvamento automatico grava os arquivos MIDI uma vez e depois salva
+  referencias e ajustes, evitando copiar toda a biblioteca a cada configuracao.
+- Ajustes de mixer e exportacao continuam ligados a musica atual, mesmo quando
+  outra playlist esta aberta. Filas e viradas preservam a origem das faixas.
+- Alterar a codificacao das letras preserva os eventos, o cursor e as notas
+  tocando. Alteracoes visuais nao reenviam o volume MIDI sem necessidade.
+- Alterar a velocidade contabiliza o tempo decorrido antes de mudar o BPM.
+- Sessoes antigas sao lidas e migradas no primeiro salvamento.
+
+VALIDACAO
+Testes automatizados em navegador Edge: biblioteca sintetica de 200 MIDIs
+de aproximadamente 60 KB, trocas para listas novas, em cache e vazias,
+salvamento e reabertura, mixer, letras, fila entre listas e viradas.
+Tambem foram executados testes do parser MIDI, VPL, mixer e transicoes.
+Os testes usam saida MIDI simulada; nao comprovam a latencia audivel do
+sintetizador WinMM ou de um dispositivo MIDI fisico.

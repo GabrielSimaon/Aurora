@@ -1,0 +1,42 @@
+AURORA MIDI 0.11.1 - ATUALIZACAO PARA O NOTEBOOK
+
+As alteracoes feitas no computador desta conversa nao passam automaticamente
+para outro computador. Este pacote leva a mesma versao para o notebook.
+Se o notebook ja tinha So mao esquerda, esta versao acrescenta o salvamento
+do diagnostico para analisar o que realmente chega pelo USB naquele aparelho.
+
+COMO ATUALIZAR
+1. No notebook, feche o Aurora usando Encerrar.
+2. Extraia este pacote inteiro para uma pasta temporaria.
+3. Abra Atualizar_Aurora.exe com dois cliques.
+4. Escolha a pasta do notebook que contem AuroraMIDI.exe.
+5. Abra o Aurora. No painel Teclado ao vivo, deve aparecer 0.11.1 no topo.
+
+O atualizador cria um backup dos fontes anteriores antes de copiar a atualizacao.
+Nao precisa abrir CMD ou PowerShell. O pacote exige uma instalacao existente
+com AuroraMIDI.exe; ele nao contem o runtime Electron completo.
+
+SE O WINDOWS NAO ABRIR O ATUALIZADOR
+Com o Aurora fechado, copie a pasta resources deste pacote para a mesma pasta
+que contem AuroraMIDI.exe e aceite mesclar e substituir os arquivos.
+Confirme que package.json fica diretamente em resources\app\package.json.
+
+COMO REGISTRAR O PROBLEMA DO CHORD/ACMP
+1. Abra So mao esquerda e selecione o E-X50.
+2. Abra Conferir sinal MIDI / CHORD/ACMP.
+3. Desligue CHORD no teclado e clique em Marcar CHORD desligado no Aurora.
+   Toque 3 ou 4 acordes somente com a mao esquerda.
+4. Ligue CHORD/ACMP no teclado e clique em Marcar CHORD ligado no Aurora.
+   Repita os mesmos acordes com a mao esquerda.
+5. Clique em Salvar diagnostico e salve o arquivo JSON.
+6. Anexe o JSON nesta conversa para podermos comparar os dois estados.
+
+Os botoes Marcar apenas identificam a etapa do teste; nao comandam o teclado.
+O diagnostico inclui versao, nome da entrada MIDI, filtros, divisao da esquerda,
+notas ativas e as ultimas 2048 mensagens curtas (sem relogio repetitivo e sem
+captura SysEx). Nao inclui musicas ou playlists do usuario.
+
+IMPORTANTE
+Ainda nao foi comprovada uma solucao para a ausencia de notas da esquerda do
+E-X50 com ACMP ligado. A versao de software e os dados daquele notebook precisam
+ser conferidos. O modo So mao esquerda so reconhece as notas MIDI recebidas.

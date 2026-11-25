@@ -1,0 +1,4 @@
+[1124/150451.455:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: Não há processo no outro extremo do pipe. (0xE9)
+[1124/150651.247:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: Não há processo no outro extremo do pipe. (0xE9)
+[1124/151756.139:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: Não há processo no outro extremo do pipe. (0xE9)
+[1124/151955.786:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: Não há processo no outro extremo do pipe. (0xE9)

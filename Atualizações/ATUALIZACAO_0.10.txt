@@ -1,0 +1,19 @@
+AURORA MIDI 0.10 - TECLADO AO VIVO
+
+Feche o Aurora por Encerrar e abra novamente para carregar a atualizacao.
+
+Clique em Teclado ao vivo, ao lado de Layout padrao, na barra de cima.
+Abre uma janela no estilo Acordes, com:
+- Selecao do teclado MIDI conectado.
+- Notas tocadas e piano acendendo ao vivo.
+- Reconhecimento aproximado de acordes e historico recente.
+- Filtro dos 16 canais para separar as maos do acompanhamento automatico.
+- Sustain, atualizacao das entradas e limpeza de notas presas.
+
+Conecte por USB: USB TO HOST no Yamaha PSR-SX600 ou USB COMPUTER no Roland
+E-X50. Selecione a entrada correspondente. A entrada precisa ser reconhecida
+pelo Windows. Se o ritmo aparecer nas cifras, ajuste os canais recebidos.
+
+Este painel nao envia notas para o teclado nem interfere no player.
+Os testes automatizados usam mensagens MIDI simuladas. A validacao fisica
+precisa ser feita com o instrumento conectado.

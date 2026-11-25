@@ -1,0 +1,56 @@
+AURORA MIDI 0.6 — VIRADA AUTOMÁTICA, ENCERRAMENTO E CONTROLES
+
+Feche e reabra AuroraMIDI.exe para carregar a atualização.
+
+VIRADA NO FINAL DA MÚSICA
+1. Durante a reprodução, clique em Virada: a borda fica azul e o botão muda
+   para Confirmar. Esse primeiro clique não executa nem programa a virada.
+2. Clique novamente em até 5 segundos: o botão permanece azul, com Virada ✓,
+   confirmando que a transição está programada para o final da música atual.
+3. Ao terminar, toca uma virada simples de 1 compasso no andamento atual.
+4. Entra a primeira música da fila Tocar a seguir. Se a fila estiver vazia,
+   entra a próxima música da playlist. O silêncio antes da primeira nota é
+   pulado, inclusive se a faixa só começar a tocar em 00:03 ou mais tarde.
+
+A primeira nota entra ao terminar a virada, mesmo com Entrada rápida da
+playlist desativada. A ordem da playlist e os arquivos MIDI são preservados.
+A virada programada vale para essa transição. Para programar outra, confirme
+novamente. Clicar no botão azul já confirmado cancela a programação.
+Pausar/continuar mantém a virada confirmada. Parar, buscar outra posição ou
+trocar de música cancela a programação. Se não houver próxima música ao
+terminar, a virada é cancelada. A primeira confirmação expira em 5 segundos.
+Player, Controles e painéis encaixados mostram a mesma confirmação azul.
+
+ESPAÇO
+Pausa e continua de onde parou, no player, nas janelas separadas e no modo
+Grudar telas. Também funciona depois de clicar em um botão ou fader.
+Não interfere ao digitar em um campo de texto ou usar caixas de seleção.
+Manter a tecla pressionada não fica alternando reprodução repetidamente.
+
+ENCERRAR
+O botão Encerrar × fica no canto superior direito do modo Grudar telas, ao
+lado de Janelas soltas. Fecha o aplicativo inteiro, inclusive painéis ocultos.
+Fechar o X da janela principal também encerra tudo. Antes de sair, o player
+pausa e tenta concluir o salvamento da sessão; o encerramento não fica
+preso se a interface não responder. O processo de áudio e a bandeja fecham.
+Fechar apenas um painel secundário continua sendo uma ação daquele painel.
+
+EXPANDIR / COMPACTAR
+No modo de janelas, Expandir guarda a posição e o tamanho atuais. Compactar
+volta a esses valores, mesmo que você tenha arrastado a janela expandida.
+Se um monitor não estiver mais disponível, volta para uma área visível.
+
+TESTES
+Testes de MIDI, VPL, mixagem, virada, sustentação de notas e layout.
+Testes de virada confirmada esperando o fim real da música, fila ou playlist,
+entrada na primeira nota após 3 segundos de silêncio, cancelamento e pausa.
+Testes de Espaço nos painéis, nos faders e em campos de texto.
+Testes de retorno à posição original depois de expandir e mover.
+Testes de X, Encerrar, painéis ocultos, salvamento e encerramento forçado
+quando a interface não confirma a saída.
+
+PACOTE
+Esta cópia de trabalho já foi atualizada. Este ZIP contém resources/app e
+documentação; ele não inclui o executável e as DLLs do pacote portátil.
+Para atualizar outra cópia, feche o programa e copie resources para a pasta
+que contém AuroraMIDI.exe, substituindo os arquivos.

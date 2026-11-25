@@ -1,0 +1,43 @@
+AURORA MIDI 0.5 — PAINÉIS ENCAIXADOS
+
+Atualização aplicada nesta pasta. Feche e reabra AuroraMIDI.exe para carregar
+todos os componentes da versão nova. Não é necessário instalar nada.
+
+GRUDAR TELAS
+Ao lado de Claro / escuro, clique em Grudar telas. Os painéis compactos
+passam a ocupar uma janela única em tela cheia, encaixados sem sobreposição.
+Atalho: Ctrl+Shift+D (também funciona a partir do estúdio completo).
+A música continua no mesmo player durante a troca de modo.
+
+PERSONALIZAR
+- Arraste o título de um painel para outro painel. Uma prévia mostra onde
+  ele será encaixado: à esquerda, à direita, acima ou abaixo.
+- Soltar no centro troca as posições dos dois painéis.
+- Arraste as divisórias para ajustar os tamanhos.
+- O botão ↔ em cada título permite escolher a posição também pelo teclado.
+- Painéis permite incluir ou ocultar Playlist, Controles, Mixer, Karaokê,
+  Piano e Acordes. O Player permanece disponível.
+- ↗ amplia um painel dentro do espaço de trabalho. Esc restaura o layout.
+- Travar layout impede movimentos e mudanças das divisórias por acidente.
+- O layout é salvo automaticamente; Salvar layout confirma o salvamento.
+- Layout padrão recupera a organização inicial.
+- Janelas soltas, Soltar telas ou Esc sai desse modo. As janelas que estavam
+  abertas reaparecem nos tamanhos e posições anteriores.
+- O layout personalizado continua disponível na próxima vez.
+
+A versão mantém fila Tocar a seguir, virada, temas e mixagem da versão 0.4.
+
+VALIDAÇÃO
+Passaram testes MIDI/VPL/mixagem, virada e preservação de notas longas.
+Passaram testes de encaixe, troca de posições, redimensionamento, trava,
+maximização, painéis opcionais, temas, salvamento e retorno às janelas.
+A interface renderizada foi conferida em 1440x900 e 1164x620.
+Os controles embutidos usam o mesmo motor de reprodução.
+O programa foi aberto no Windows; a conferência final de tela cheia nativa
+ficou pendente porque a conexão de automação com o Windows parou de responder.
+
+PACOTE DE ATUALIZAÇÃO
+Este ZIP inclui resources/app e documentação; não inclui o executável
+ou as DLLs do runtime portátil. Em outra cópia do Aurora, feche o programa e
+copie resources para a pasta que contém AuroraMIDI.exe, substituindo os
+arquivos. Esta cópia de trabalho já está atualizada.

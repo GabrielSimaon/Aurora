@@ -1,0 +1,15 @@
+AURORA MIDI 0.10.2 - TESTE DO CHORD/ACMP
+
+Feche o Aurora por Encerrar e abra novamente.
+Abra Teclado ao vivo e selecione o E-X50.
+Com CHORD/ACMP ligado, clique em Testar CHORD/ACMP e toque um acorde somente
+na mao esquerda. O teste libera todos os canais e reinicia o contador.
+
+O painel informa quantas notas chegaram e em quais canais, mesmo se os filtros
+anteriores impediam a exibicao. Sinais de ritmo sao diferenciados de notas.
+Ao finalizar, os filtros podem ser ajustados novamente.
+
+Se o contador continuar em 0 notas, nenhuma nota chegou ao Aurora nesse
+teste. A causa precisa ser verificada no instrumento. Nao foi presumida uma
+correcao para o envio interno da parte esquerda e nao foram inventadas cifras
+a partir de sinais de ritmo.

@@ -1,0 +1,17 @@
+AURORA MIDI 0.10.1 - ENTRADA MIDI NATIVA DO WINDOWS
+
+Feche o Aurora por Encerrar e abra novamente para carregar a correcao.
+Abra Teclado ao vivo e clique em Atualizar.
+
+O painel agora procura as entradas MIDI diretamente no Windows (WinMM).
+Isso evita depender exclusivamente da enumeracao do Chromium.
+E-X50 ou Roland E-X50 deve aparecer quando sua entrada USB MIDI estiver
+reconhecida pelo Windows. Nenhum driver foi instalado ou alterado.
+
+Se a entrada estiver ocupada, o painel avisa para fechar o outro programa
+MIDI e tentar novamente. A lista e atualizada ao conectar ou retirar o USB.
+O player continua usando sua ponte de saida independente.
+
+Testes automatizados da ponte, painel, notas simuladas e erro de porta ocupada
+passaram. A inicializacao e enumeracao reais foram verificadas no Windows,
+mas nao havia uma entrada fisica visivel na sessao de teste.
