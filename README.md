@@ -2,8 +2,36 @@
 
 Player MIDI e karaokê para Windows 10/11 x64. O Aurora reúne reprodução,
 playlists, mixagem e ferramentas de acompanhamento em uma aplicação desktop
-offline. Esta versão corresponde ao pacote 0.8.0.
+offline. Esta versão corresponde ao pacote 0.14.0.
 Os arquivos de atualização e o histórico de versões ficam em `Atualizações/`.
+
+### Pacote portátil abaixo de 500 MB
+
+O pacote de distribuição é gerado separadamente da pasta de desenvolvimento.
+Na pasta `resources/app`, execute `npm run build:portable`; a saída fica em
+`dist/AuroraMIDI_Leve`, na raiz do projeto. Para escolher outra pasta nova, use
+`npm run build:portable -- --out CAMINHO`. O gerador usa apenas Node.js,
+recusa sobrescrever pastas existentes e verifica o limite de 500.000.000 bytes
+para a pasta **descompactada**.
+
+O pacote mantém o runtime Electron, o motor MIDI, as DLLs gráficas e de áudio,
+as licenças e todas as ferramentas musicais. Inclui os idiomas pt-BR, pt-PT e
+en-US. Histórico Git, cópias de trabalho, backups, testes e ferramentas de
+desenvolvimento ficam fora da distribuição. As sete imagens PNG do Cifra Dog
+que já são usadas em WebP também ficam fora; os originais permanecem nos fontes.
+Um manifesto SHA-256 permite conferir os arquivos distribuídos.
+
+Para conferir tamanho, hashes e recursos locais do pacote sem dependências:
+`npm run test:portable -- ../../dist/AuroraMIDI_Leve --static`.
+Sem `--static`, o teste também usa Playwright para abrir o executável,
+iniciar/pausar a demonstração e abrir o monitor da mão esquerda.
+
+Validação do pacote em 25/11/2026: 330.993.881 bytes descompactados e
+150.369.684 bytes no ZIP. Integridade SHA-256, recursos offline, testes MIDI,
+mixagem, transporte e interface de karaokê/mixer passaram. O teste da interface
+usou os arquivos do pacote no Edge. A abertura nativa automatizada do Electron
+foi bloqueada pelas ACLs do ambiente Windows de execução e não foi validada;
+as proteções de sandbox do aplicativo distribuído permanecem habilitadas.
 
 > **Pacote portátil:** o repositório inclui `AuroraMIDI.exe` e os recursos do
 > runtime Electron para Windows. O executável é armazenado com Git LFS; instale

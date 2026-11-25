@@ -7,6 +7,8 @@
   "author": "Gabriel Simão",
   "license": "MIT",
   "scripts": {
+    "build:portable": "node dev-tools/build-portable.cjs",
+    "test:portable": "node dev-tests/test-portable.cjs",
     "test": "node tests.cjs && node tests-v2.cjs && node tests-v3.cjs",
     "start": "electron .",
     "test:ui": "node dev-tests/test-dom.cjs && node dev-tests/test-v2-ui.cjs && node dev-tests/test-v3-ui.cjs && node dev-tests/test-panels.cjs && node dev-tests/test-desktop.cjs",
